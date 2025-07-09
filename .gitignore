@@ -1,0 +1,7 @@
+mcp-client/.env
+mcp-client/.venv
+orchestrator/.env
+orchestrator/Orcha/
+orchestrator/__pycache__/
+blog/blog_posts
+blog/.venv

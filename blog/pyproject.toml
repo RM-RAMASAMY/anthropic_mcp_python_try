@@ -1,0 +1,10 @@
+[project]
+name = "blog"
+version = "0.1.0"
+description = "Blog management MCP server"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.10.1",
+]

@@ -1,0 +1,219 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="27.2.0">
+  <diagram name="Orchestration Flow" id="orchestration-flow-diagram">
+    <mxGraphModel dx="1665" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="BLOG WORKFLOW ORCHESTRATION SYSTEM" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1565C0;" parent="1" vertex="1">
+          <mxGeometry x="350" y="20" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="START&#xa;User Input" style="ellipse;whiteSpace=wrap;html=1;fillColor=#4CAF50;strokeColor=#2E7D32;fontColor=#FFFFFF;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="input-params" value="INPUT PARAMETERS&#xa;• Theme/Topic&#xa;• Author Name&#xa;• Tags&#xa;• Writer Persona&#xa;• Reviewer Persona&#xa;• Max Iterations" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;align=left;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="700" y="60" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="init-orchestrator" value="INITIALIZE&#xa;ORCHESTRATOR&#xa;&#xa;• Load Personas&#xa;• Connect to Blog Server&#xa;• Setup AI Client" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#F57C00;align=center;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="505" y="180" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="writer-ai" value="WRITER AI&#xa;GENERATION&#xa;&#xa;• Apply Writer Persona&#xa;• Generate Initial Post&#xa;• Create Title &amp; Content&#xa;• Save to Blog Server" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;align=center;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="505" y="300" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-review-loop" value="AI REVIEW LOOP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFEBEE;strokeColor=#C62828;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="280" y="440" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-reviewer" value="AI REVIEWER&#xa;&#xa;• Apply Reviewer Persona&#xa;• Evaluate Quality&#xa;• Check Structure&#xa;• Assess Engagement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#AD1457;align=center;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="320" y="500" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-decision" value="AI&#xa;APPROVED?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#D32F2F;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="620" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iteration-check" value="MAX&#xa;ITERATIONS&#xa;REACHED?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="540" y="620" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="revision" value="POST REVISION&#xa;&#xa;• Apply Feedback&#xa;• Generate New Version&#xa;• Update Content&#xa;• Increment Version" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E8;strokeColor=#4CAF50;align=center;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="760" y="560" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="human-review-section" value="HUMAN REVIEW SECTION" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1F5FE;strokeColor=#0277BD;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="280" y="740" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="human-review" value="HUMAN REVIEW&#xa;&#xa;• Display Post Content&#xa;• Show Version Info&#xa;• Present Word Count&#xa;• Request Decision" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B3E5FC;strokeColor=#0288D1;align=center;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="320" y="800" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="human-decision" value="HUMAN&#xa;APPROVED?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#81D4FA;strokeColor=#0277BD;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="920" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="human-feedback" value="COLLECT&#xa;FEEDBACK&#xa;&#xa;• Get Specific Comments&#xa;• Document Issues&#xa;• Prepare for Revision" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFECB3;strokeColor=#FFA000;align=center;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="520" y="800" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="final-save" value="FINAL SAVE&#xa;&#xa;• Update Blog Server&#xa;• Finalize Post ID&#xa;• Complete Workflow" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#388E3C;align=center;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="720" y="800" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="success-end" value="SUCCESS&#xa;Blog Post&#xa;Published" style="ellipse;whiteSpace=wrap;html=1;fillColor=#4CAF50;strokeColor=#2E7D32;fontColor=#FFFFFF;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="blog-server" value="BLOG MCP SERVER&#xa;&#xa;• create_blog_post()&#xa;• update_blog_post()&#xa;• File Storage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8BBD9;strokeColor=#E91E63;align=center;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="225" y="334" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="anthropic-api" value="ANTHROPIC API&#xa;&#xa;• Claude 3.5 Sonnet&#xa;• Writer AI&#xa;• Reviewer AI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCEDC8;strokeColor=#689F38;align=center;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="830" y="260" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="state1" value="INIT" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#757575;fontSize=8;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="200" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="state2" value="GENERATING" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#757575;fontSize=8;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="320" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="state3" value="AI_REVIEW" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#757575;fontSize=8;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="520" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="state4" value="HUMAN_REVIEW" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#757575;fontSize=8;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="280" y="820" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="state5" value="COMPLETED" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#757575;fontSize=8;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="480" y="1060" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow1" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#1976D2;" parent="1" source="start" target="init-orchestrator" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="150" as="sourcePoint" />
+            <mxPoint x="580" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow2" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#1976D2;" parent="1" source="init-orchestrator" target="writer-ai" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="260" as="sourcePoint" />
+            <mxPoint x="580" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow3" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#1976D2;" parent="1" source="writer-ai" target="ai-reviewer" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="505" y="350" as="sourcePoint" />
+            <mxPoint x="390" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="505" y="400" />
+              <mxPoint x="390" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow4" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#D32F2F;" parent="1" source="ai-reviewer" target="ai-decision" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="580" as="sourcePoint" />
+            <mxPoint x="390" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow5" value="REJECT" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#F57C00;" parent="1" source="ai-decision" target="iteration-check" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="660" as="sourcePoint" />
+            <mxPoint x="540" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow6" value="NO" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#4CAF50;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="iteration-check" target="revision" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="620" as="sourcePoint" />
+            <mxPoint x="720" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="690" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow7" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#4CAF50;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="revision" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="566.6666666666667" as="sourcePoint" />
+            <mxPoint x="460" y="550" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="700" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow8" value="APPROVE" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#4CAF50;" parent="1" source="ai-decision" target="human-review" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="700" as="sourcePoint" />
+            <mxPoint x="350" y="800" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="700" />
+              <mxPoint x="300" y="750" />
+              <mxPoint x="390" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow9" value="YES" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#FF9800;" parent="1" source="iteration-check" target="human-review" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="700" as="sourcePoint" />
+            <mxPoint x="390" y="800" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="750" />
+              <mxPoint x="390" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow10" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#0277BD;" parent="1" source="human-review" target="human-decision" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="880" as="sourcePoint" />
+            <mxPoint x="390" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow11" value="REJECT" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#F57C00;" parent="1" source="human-decision" target="human-feedback" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="920" as="sourcePoint" />
+            <mxPoint x="520" y="880" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="500" y="920" />
+              <mxPoint x="590" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow12" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#FF9800;" parent="1" source="human-feedback" target="human-review" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="840" as="sourcePoint" />
+            <mxPoint x="460" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow13" value="APPROVE" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#4CAF50;" parent="1" source="human-decision" target="final-save" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="940" as="sourcePoint" />
+            <mxPoint x="720" y="880" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="500" y="960" />
+              <mxPoint x="790" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow14" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#4CAF50;" parent="1" source="final-save" target="success-end" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="790" y="880" as="sourcePoint" />
+            <mxPoint x="580" y="1040" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="790" y="1000" />
+              <mxPoint x="580" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ext-arrow1" value="MCP&#xa;Protocol" style="endArrow=classic;html=1;rounded=0;strokeWidth=1;strokeColor=#E91E63;dashed=1;" parent="1" source="blog-server" target="writer-ai" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="340" as="sourcePoint" />
+            <mxPoint x="505" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ext-arrow2" value="API&#xa;Calls" style="endArrow=classic;html=1;rounded=0;strokeWidth=1;strokeColor=#689F38;dashed=1;" parent="1" source="anthropic-api" target="writer-ai" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="950" y="340" as="sourcePoint" />
+            <mxPoint x="655" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ext-arrow3" value="API&#xa;Calls" style="endArrow=classic;html=1;rounded=0;strokeWidth=1;strokeColor=#689F38;dashed=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="anthropic-api" target="ai-reviewer" edge="1">
+          <mxGeometry x="0.2437" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="950" y="380" as="sourcePoint" />
+            <mxPoint x="460" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="900" y="520" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" value="LEGEND&#xa;━━━ Main Flow&#xa;┅┅┅ External System&#xa;▶ Process State" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;align=left;verticalAlign=top;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="50" y="1000" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
